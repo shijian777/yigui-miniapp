@@ -1,0 +1,13 @@
+/* pages/order-detail/order-detail.wxss */
+.type-title { font-size: 34rpx; font-weight: 700; }
+.info-row {
+  display: flex; align-items: flex-start; padding: 14rpx 0;
+  border-bottom: 1rpx solid #f7f7f7; font-size: 28rpx;
+}
+.info-row .muted { width: 160rpx; flex-shrink: 0; }
+.line { padding: 20rpx 0; border-bottom: 1rpx solid #f5f5f5; }
+.line:last-child { border-bottom: none; }
+.line-name { font-size: 28rpx; }
+.line-amount { font-weight: 700; }
+.footer-bar .act { flex: 1; }
+.footer-bar .act + .act { margin-left: 16rpx; }

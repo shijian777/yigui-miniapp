@@ -1,0 +1,22 @@
+test_atomic_whole_ledger_save_and_rollback_export (__main__.StorageTests.test_atomic_whole_ledger_save_and_rollback_export) ... ok
+test_backup_file_recovers_current_ledger (__main__.StorageTests.test_backup_file_recovers_current_ledger) ... ok
+test_backup_rotation_leaves_unrelated_files_untouched (__main__.StorageTests.test_backup_rotation_leaves_unrelated_files_untouched) ... ok
+test_failed_backup_does_not_leave_partial_files (__main__.StorageTests.test_failed_backup_does_not_leave_partial_files) ... ok
+test_health_and_authentication (__main__.StorageTests.test_health_and_authentication) ... ok
+test_history_retention_does_not_remove_current_state (__main__.StorageTests.test_history_retention_does_not_remove_current_state) ... ok
+test_invalid_payload_never_changes_state (__main__.StorageTests.test_invalid_payload_never_changes_state) ... ok
+test_key_reuse_with_different_payload_rejected (__main__.StorageTests.test_key_reuse_with_different_payload_rejected) ... ok
+test_malformed_or_oversized_json_rejected (__main__.StorageTests.test_malformed_or_oversized_json_rejected) ... ok
+test_missing_version_or_idempotency_key_rejected (__main__.StorageTests.test_missing_version_or_idempotency_key_rejected) ... ok
+test_network_replay_commits_only_once (__main__.StorageTests.test_network_replay_commits_only_once) ... ok
+test_old_interrupted_backup_is_cleaned_but_fresh_partial_is_kept (__main__.StorageTests.test_old_interrupted_backup_is_cleaned_but_fresh_partial_is_kept) ... ok
+test_roundtrip_persistence_across_restart (__main__.StorageTests.test_roundtrip_persistence_across_restart) ... ok
+test_sqlite_failure_rolls_back_whole_transaction (__main__.StorageTests.test_sqlite_failure_rolls_back_whole_transaction) ... ok
+test_stale_version_does_not_overwrite (__main__.StorageTests.test_stale_version_does_not_overwrite) ... ok
+test_two_simultaneous_writes_do_not_lose_updates (__main__.StorageTests.test_two_simultaneous_writes_do_not_lose_updates) ... ok
+test_unknown_endpoint_rejected (__main__.StorageTests.test_unknown_endpoint_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 10.823s
+
+OK

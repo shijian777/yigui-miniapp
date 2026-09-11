@@ -1,0 +1,31 @@
+# Local editor and platform configuration
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+node_modules/
+project.private.config.json
+
+# Credentials and runtime data
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+storage.json
+ledger.sqlite3*
+*.db
+*.db-wal
+*.db-shm
+__pycache__/
+*.py[cod]
+
+# Generated previews, packages, and verification output
+*-preview-*.png
+my-experience-qr.png
+my-preview-info.json
+preview-info.json
+*.zip
+*.tar.gz
+修复验证结果.json
+修复回归测试日志.txt
