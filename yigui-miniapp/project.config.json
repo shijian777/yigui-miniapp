@@ -1,5 +1,5 @@
 {
-  "description": "衣柜服装记账修复版（本地数据模式）",
+  "description": "衣柜小程序：服装店进销存与记账（本地数据模式）",
   "packOptions": {
     "ignore": [
       {
