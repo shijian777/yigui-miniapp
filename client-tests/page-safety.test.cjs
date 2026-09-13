@@ -3,7 +3,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
-const root = path.resolve(__dirname, '../danjie-connected-miniapp');
+const root = path.resolve(__dirname, '../yigui-miniapp');
 const realUtil = require(path.join(root, 'utils/util.js'));
 const clone = value => JSON.parse(JSON.stringify(value));
 const event = dataset => ({ currentTarget: { dataset } });

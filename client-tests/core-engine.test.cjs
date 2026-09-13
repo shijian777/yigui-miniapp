@@ -1,6 +1,6 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { createLocalCloud } = require('../danjie-connected-miniapp/utils/localcloud');
+const { createLocalCloud } = require('../yigui-miniapp/utils/localcloud');
 
 function storage(owner = 'owner', collections = {}) {
   const values = { cpos_openid: owner };
@@ -173,7 +173,7 @@ for (const scenario of [
   { name: 'returnSale', data: { orderId: 'o' } }
 ]) {
   test('atomic provider rolls back every collection after failed multi-line ' + scenario.name, async () => {
-    const { createAtomicStorage } = require('../danjie-connected-miniapp/utils/atomic-storage');
+    const { createAtomicStorage } = require('../yigui-miniapp/utils/atomic-storage');
     const device = storage('owner', {
       goods: [goods()],
       sales_orders: [order({ lines: [{ goodsId: 'g', qty: 1 }, { goodsId: 'missing', qty: 1 }] })]
@@ -283,7 +283,7 @@ test('saveGoods creates goods and every initial stock log as one business operat
   assert.equal(store.rows('inventory_logs')[1].unitPrice, 0);
 });
 test('saveGoods rolls back goods creation when writing initial logs fails', async () => {
-  const { createAtomicStorage } = require('../danjie-connected-miniapp/utils/atomic-storage');
+  const { createAtomicStorage } = require('../yigui-miniapp/utils/atomic-storage');
   const provider = createAtomicStorage(storage('owner'));
   let logWrites = 0;
   const failing = {

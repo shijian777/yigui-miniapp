@@ -1,6 +1,6 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { createAtomicStorage, SNAPSHOT_KEY } = require('../danjie-connected-miniapp/utils/atomic-storage.js');
+const { createAtomicStorage, SNAPSHOT_KEY } = require('../yigui-miniapp/utils/atomic-storage.js');
 function fixture() {
   const data = { cpos_openid: 'owner', __lcloud_goods: [{ _id: 'g', stock: 10 }] };
   let fail = false, writes = 0;

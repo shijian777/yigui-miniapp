@@ -1,5 +1,5 @@
 const fs = require('node:fs'), path = require('node:path'), vm = require('node:vm'), cp = require('node:child_process');
-const root = path.join(__dirname, 'danjie-connected-miniapp');
+const root = path.join(__dirname, 'yigui-miniapp');
 const errors = [];
 function walk(dir) { return fs.readdirSync(dir, { withFileTypes: true }).flatMap(e => e.isDirectory() ? e.name === 'h5' ? [] : walk(path.join(dir, e.name)) : [path.join(dir, e.name)]); }
 let js = 0, json = 0, bindings = 0;

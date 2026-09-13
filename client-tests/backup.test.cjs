@@ -1,7 +1,7 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { createAtomicStorage, SNAPSHOT_KEY } = require('../danjie-connected-miniapp/utils/atomic-storage.js');
-const { exportData, importData, RESTORE_BACKUP_KEY } = require('../danjie-connected-miniapp/utils/data-backup.js');
+const { createAtomicStorage, SNAPSHOT_KEY } = require('../yigui-miniapp/utils/atomic-storage.js');
+const { exportData, importData, RESTORE_BACKUP_KEY } = require('../yigui-miniapp/utils/data-backup.js');
 function fixture() {
   const data = { cpos_openid: 'new-owner', __lcloud_goods: [{ _id: 'old', openid: 'new-owner', stock: 5 }], __lcloud___seq: 30 };
   let failKey;

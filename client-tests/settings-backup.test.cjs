@@ -3,7 +3,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const vm = require('node:vm');
 const path = require('node:path');
-const root = path.resolve(__dirname, '../danjie-connected-miniapp');
+const root = path.resolve(__dirname, '../yigui-miniapp');
 function page(overrides = {}) {
   const notices = [], saved = [], imported = [];
   const util = { exportAllData: async () => ({ json: '{"backup":true}', counts: { goods: 3 } }), buildBackupFilename: () => 'backup.json', importAllData: async (json, mode) => imported.push({ json, mode }), wxP: (fn, opt) => new Promise((resolve, reject) => fn({ ...opt, success: resolve, fail: reject })) };

@@ -1,8 +1,8 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { createLocalCloud } = require('../danjie-connected-miniapp/utils/localcloud.js');
-const { createAtomicStorage } = require('../danjie-connected-miniapp/utils/atomic-storage.js');
-const util = require('../danjie-connected-miniapp/utils/util.js');
+const { createLocalCloud } = require('../yigui-miniapp/utils/localcloud.js');
+const { createAtomicStorage } = require('../yigui-miniapp/utils/atomic-storage.js');
+const util = require('../yigui-miniapp/utils/util.js');
 const good = (id = 'g', extra = {}) => ({ _id: id, openid: 'owner', name: id, stock: 10, totalStock: 10, price: 100, costPrice: 20, status: 'on', ...extra });
 const line = (id = 'g', qty = 1) => ({ goodsId: id, qty, price: 100, unitCost: 20 });
 function fixture(collections = {}) {

@@ -1,5 +1,5 @@
 {
-  "description": "丹姐服装记账修复版（本地数据模式）",
+  "description": "衣柜服装记账修复版（本地数据模式）",
   "packOptions": {
     "ignore": [
       {
@@ -67,7 +67,7 @@
   "compileType": "miniprogram",
   "libVersion": "2.33.0",
   "appid": "wx39e1ebe35f294654",
-  "projectname": "danjie-fixed-miniapp",
+  "projectname": "yigui-miniapp",
   "miniprogramRoot": "./",
   "cloudfunctionRoot": "cloudfunctions/",
   "condition": {},

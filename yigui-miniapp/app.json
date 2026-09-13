@@ -24,7 +24,7 @@
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "服装进销存",
+    "navigationBarTitleText": "衣柜",
     "backgroundColor": "#f5f6f8",
     "backgroundTextStyle": "dark"
   },
